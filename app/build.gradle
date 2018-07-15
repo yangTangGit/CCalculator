@@ -1,0 +1,44 @@
+apply plugin: 'com.android.application'
+
+def static releaseTime() {
+    return new Date().format("yyyy_MM_dd", TimeZone.getTimeZone("GMT+8"))
+}
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.2"
+    defaultConfig {
+        applicationId "com.yang.ccalculator"
+        minSdkVersion 17
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            def oldFile = output.outputFile
+            //def oldFile = output.packageApplication.outputFile
+            if (oldFile != null && oldFile.name.endsWith('.apk')/* && variant.buildType.name.equals("release")*/) {
+                def fileName = "Calculator-" + defaultConfig.versionName + "-" + variant.buildType.name + "-" + releaseTime() + ".apk"
+                def newFile = new File(oldFile.parent, fileName)
+                output.outputFile = newFile
+                //output.packageApplication.outputFile = newFile
+            }
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+}

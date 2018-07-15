@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculator</string>
+
+    <!-- 启动页 -->
+    <string name="extra_describe">Calculator v1.0\nBasic calculator based on Android</string>
+    <string name="start_describe">Author: Yang Tang</string>
+
+    <!-- 计算器页面 -->
+    <string name="input_formula">input formula to calculate.</string>
+    <string name="invalid_formula">errors occurred in formula.</string>
+    <string name="zero_err">the divisor can\'t be zero</string>
+
+    <!-- 菜单 -->
+    <string name="theme">Theme</string>
+    <string name="lang">Language</string>
+    <string name="about">About</string>
+    <string name="menu_tip">Slide right at the left edge of the screen to open this menu.</string>
+    <string name="lang_default">Default</string>
+    <string name="lang_sim_chinese">Simplified Chinese</string>
+    <string name="lang_english">English</string>
+
+</resources>

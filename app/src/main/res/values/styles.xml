@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppThemeDark" parent="android:Theme.Holo.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+
+    </style>
+
+    <style name="CalculateBtn">
+        <item name="android:background">@drawable/slc_cal_btn_bg</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+</resources>

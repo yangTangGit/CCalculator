@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">计算器</string>
+
+    <!-- 启动页 -->
+    <string name="extra_describe">计算器 v1.0\n基于Android的简易计算器</string>
+    <string name="start_describe">作者：杨唐</string>
+
+    <!-- 计算器页面 -->
+    <string name="input_formula">输入公式计算</string>
+    <string name="invalid_formula">公式有误。</string>
+    <string name="zero_err">除数不能为零</string>
+
+    <!-- 菜单 -->
+    <string name="theme">主题</string>
+    <string name="lang">语言</string>
+    <string name="about">关于</string>
+    <string name="menu_tip">提示：屏幕左边缘右滑可以打开本菜单。</string>
+    <string name="lang_default">默认</string>
+    <string name="lang_sim_chinese">简体中文</string>
+    <string name="lang_english">英语</string>
+</resources>
